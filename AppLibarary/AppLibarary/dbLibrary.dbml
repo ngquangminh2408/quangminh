@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ManageLibrary" Class="dbLibraryDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-FHCGJGQ\SQLEXPRESS;Initial Catalog=ManageLibrary;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="AppLibarary.Properties.Settings" SettingsPropertyName="ManageLibraryConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Book" Member="Books">
+    <Type Name="Book">
+      <Column Name="bookID" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="bookName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="kind" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="publisherID" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="bookShelfID" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="timeInput" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fettle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="BookShelf_Book" Member="BookShelf" ThisKey="bookShelfID" OtherKey="bookShelfID" Type="BookShelf" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BookShelf" Member="BookShelfs">
+    <Type Name="BookShelf">
+      <Column Name="bookShelfID" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="bookShelfName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="BookShelf_Book" Member="Books" ThisKey="bookShelfID" OtherKey="bookShelfID" Type="Book" />
+    </Type>
+  </Table>
+</Database>

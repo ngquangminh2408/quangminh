@@ -1,0 +1,11 @@
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.csprojAssemblyReference.cache
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.frmOverview.resources
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.Properties.Resources.resources
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.csproj.GenerateResource.cache
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.csproj.CoreCompileInputs.cache
+D:\C#\AppLibarary\AppLibarary\bin\Debug\AppLibarary.exe.config
+D:\C#\AppLibarary\AppLibarary\bin\Debug\AppLibarary.exe
+D:\C#\AppLibarary\AppLibarary\bin\Debug\AppLibarary.pdb
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.exe
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.pdb
+D:\C#\AppLibarary\AppLibarary\obj\Debug\AppLibarary.frmManage.resources
